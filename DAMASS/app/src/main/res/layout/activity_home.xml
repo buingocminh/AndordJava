@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cut_background"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAM ASSISTANT"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_to"
+        android:layout_below="@+id/textView1"
+        android:hint="Gửi đến"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_background"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_tenloi"
+        android:layout_below="@+id/et_to"
+        android:hint="Tên lỗi"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_background"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/et_mota"
+        android:layout_below="@+id/et_tenloi"
+        android:hint="Mô tả lỗi mà bạn gặp phải"
+        android:inputType="text"
+        android:padding="10dp"
+        android:gravity="top"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_background"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_loi"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et_mota"
+        android:text="Báo lỗi"
+        android:textColor="@color/white"
+        android:background="@drawable/backgroud_bottom"
+        android:layout_marginTop="25dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-6dp"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+<!--    <com.scwang.wave.MultiWaveHeader-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:id="@+id/wave_header"-->
+<!--        >-->
+
+<!--    </com.scwang.wave.MultiWaveHeader>-->
+</RelativeLayout>

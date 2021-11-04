@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home">
+
+    </item>
+
+    <item
+        android:id="@+id/today"
+        android:title="Today"
+        android:icon="@drawable/ic_today">
+
+    </item>
+
+    <item
+        android:id="@+id/schedule"
+        android:title="Schedule"
+        android:icon="@drawable/ic_date">
+
+    </item>
+
+
+
+    <item
+        android:id="@+id/subjects"
+        android:title="Subjects"
+        android:icon="@drawable/ic_subjects">
+    </item>
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings">
+    </item>
+</menu>
